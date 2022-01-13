@@ -1,0 +1,106 @@
+/* ==UserStyle==
+@name           ServiceNow Dark Theme
+@namespace      alex-way
+@version        1.0.0
+@description    A dark theme for ServiceNow
+@author         alex-way
+==/UserStyle== */
+
+@-moz-document domain("service-now.com") {
+    :root {
+	--main-bg: #363636;
+	--secondary-bg: #505050;
+	--tertiary-bg: #2f4f4e;
+	--main-text: white;
+}
+
+
+
+html,
+.grid-widget-content,
+body,
+.sn-form-stream-init,
+.form-control,
+.label-text,
+.list_v2,
+::placeholder,
+a:not(.navbar-brand):not([data-sn-toggle="collapse"]),
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td,
+iframe,
+.form-group,
+.sn-controls,
+.navbar,
+#ac_table_completer,
+td,
+tbody,
+.grid-stack-container,
+.navbar-actions,
+.ac_dropdown,
+[role="application"] {
+	background: var(--main-bg) !important;
+	color: var(--main-text) !important;
+}
+
+.navbar-actions {
+	padding: 0 20px;
+}
+
+.highcharts-root {
+	filter: invert(0.8);
+}
+
+tspan[title] {
+	filter: invert(0.8);
+}
+
+.is-filled .required-marker:before {
+	color: white;
+}
+
+.sn-canvas-nav-buttons,
+.grid-widget-header,
+.h-card,
+.list_nav,
+.ac_header,
+[role="navigation"] .container-fluid,
+.sn-card-component_summary .sn-widget-textblock,
+.sn-card-component_records .sn-widget-list-table-cell:last-of-type,
+.sn-card-component,
+.sn-widget-list li,
+.ac_cell,
+button.btn,
+.navbar-title,
+.tabs2_tab,
+.tabs2_tab span,
+.input-group-addon,
+[data-sn-toggle="collapse"],
+.calInput {
+	background: var(--secondary-bg) !important;
+	color: var(--main-text) !important;
+}
+
+.navbar {
+	padding: 0px 10px;
+	border: 0px;
+}
+
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--main-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--tertiary-bg);
+	border-radius: 10px;
+}
+}
